@@ -3,10 +3,8 @@
  * http://github.com/dsel/fizzbuzz.js
  */
  
-fizzBuzz = function(x, y, ans) {
-	return x % y ? '' : ans;
-}
+const fizzBuzz = (x, y, answer) => x % y ? '' : answer;
 
-for (var n = 1; n < 101; n++) {
-	console.log(fizzBuzz(n, 3, 'Fizz') + fizzBuzz(n, 5, 'Buzz') || n);
+for (let n = 1; n <= 100; n++) {
+  console.log(fizzBuzz(n, 3, 'Fizz') + fizzBuzz(n, 5, 'Buzz') || n);
 } 
